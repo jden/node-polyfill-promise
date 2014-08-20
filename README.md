@@ -13,9 +13,24 @@ var foo = Promise.resolve('foo')
 foo.then(...)
 ```
 
+or
+
+```js
+var Promise = require('polyfill-promise').noConflict()
+var foo = Promise.resolve('foo')
+foo.then(...)
+```
+
 ## API
 
-implements the [Promise api](https://github.com/domenic/promises-unwrapping/blob/master/README.md). Quick reference:
+### `Promise.polyfilled : Boolean?`
+If polyfill is used, this read-only property is set to true. If a native implementation is available, this property is undefined.
+
+### `Promise.noConflict : Function`
+Call this to return the polyfilled Promise object while leaving the global Promise property unmodified. Use this is you are writing modules which others may use.
+
+
+additionally, implements the [Promise api](https://github.com/domenic/promises-unwrapping/blob/master/README.md). Quick reference:
 
 ### `class Promise(factory : (resolve: Function, reject: Function) => void)`
 
