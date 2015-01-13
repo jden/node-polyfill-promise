@@ -20,7 +20,6 @@ describe('Promise', function () {
     Promise.race.should.be.a('function')
     Promise.reject.should.be.a('function')
     Promise.resolve.should.be.a('function')
-    Promise.cast.should.be.a('function')
   })
   it('should create Promises/A+ promises', function () {
     var promise = Promise.cast('test')

@@ -30,7 +30,7 @@ If polyfill is used, this read-only property is set to true. If a native impleme
 Call this to return the polyfilled Promise object while leaving the global Promise property unmodified. Use this is you are writing modules which others may use.
 
 
-additionally, implements the [Promise api](https://github.com/domenic/promises-unwrapping/blob/master/README.md). Quick reference:
+additionally, implements the [Promise api](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Quick reference:
 
 ### `class Promise(factory : (resolve: Function, reject: Function) => void)`
 
@@ -62,9 +62,6 @@ Create a Promise which is immediately rejected with an optional `reason`.
 
 ### `Promise.resolve(val?: Value) => Promise`
 Create a Promise which is immediately resolved with an optional `val`.
-
-### `Promise.cast(val: Promise|Value) => Promise`
-If `val` is a Promise, returns `val`; otherwise, creates a Promise which resolves to `val`.
 
 ### `Promise.all(promises: Array<Promise>) => Promise<Array>`
 Returns a Promise which is resolved when all of the Promises in the `promises` array are resolved, or rejected if any of them is rejected. The resolved value is an Array of the resolved values in the same order.
