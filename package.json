@@ -1,6 +1,6 @@
 {
   "name": "polyfill-promise",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "polyfill standard Promises to old versions of node",
   "main": "index.js",
   "scripts": {
