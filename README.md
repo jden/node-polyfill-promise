@@ -5,7 +5,7 @@ Use this to ensure the Promise constructor is available, even in old versions of
 ## usage
 
 ```js
-require('polyfill-promise')
+require('polyfill-promise')()
 // global Promise constructor is now available,
 // either native or polyfilled
 
