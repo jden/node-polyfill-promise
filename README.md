@@ -5,8 +5,7 @@ Use this to ensure the Promise constructor is available, even in old versions of
 ## usage
 
 ```js
-require('polyfill-promise')()
-// global Promise constructor is now available,
+var Promise = require('polyfill-promise')
 // either native or polyfilled
 
 var foo = Promise.resolve('foo')
@@ -16,7 +15,8 @@ foo.then(...)
 or
 
 ```js
-var Promise = require('polyfill-promise').noConflict()
+require('polyfill-promise/register')
+// global Promise constructor is now available
 var foo = Promise.resolve('foo')
 foo.then(...)
 ```
@@ -25,10 +25,6 @@ foo.then(...)
 
 ### `Promise.polyfilled : Boolean?`
 If polyfill is used, this read-only property is set to true. If a native implementation is available, this property is undefined.
-
-### `Promise.noConflict : Function`
-Call this to return the polyfilled Promise object while leaving the global Promise property unmodified. Use this is you are writing modules which others may use.
-
 
 additionally, implements the [Promise api](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Quick reference:
 
