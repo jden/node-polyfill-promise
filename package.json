@@ -10,10 +10,11 @@
   "repository": "git@github.com:jden/node-polyfill-promise.git",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^2.9.13"
+    "bluebird": "^2.9.27"
   },
   "devDependencies": {
     "chai": "^1.9.1",
-    "mocha": "^1.19.0"
+    "mocha": "^1.19.0",
+    "standard": "^4.0.1"
   }
 }

@@ -1,7 +1,7 @@
+/* globals describe, it, deboreEach, afterEach */
 require('mocha')
 require('chai').should()
 var expect = require('chai').expect
-
 
 describe('Promise', function () {
   beforeEach(function () {

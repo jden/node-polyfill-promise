@@ -2,6 +2,8 @@
 
 Use this to ensure the Promise constructor is available, even in old versions of node (< 0.12) or browsers
 
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 ## usage
 
 ```js
